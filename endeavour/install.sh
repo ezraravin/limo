@@ -9,7 +9,7 @@ while true; do
   kill -0 "$$" || exit
 done 2>/dev/null &
 
-export MODULES_INSTALL="../endeavour/modules"
+export MODULES_INSTALL="../endeavour/modules/"
 
 source "$MODULES_INSTALL/0-dotfiles.sh"
 source "$MODULES_INSTALL/1-core.sh"
