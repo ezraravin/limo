@@ -1,6 +1,3 @@
-# Cloning LIMO
-git clone https://github.com/ezraravin/limo.git
-
 # Git SSH Setup
 echo "🔐 Git SSH Setup"
 read -p "Use SSH for Git? [y/N]: " ssh_choice

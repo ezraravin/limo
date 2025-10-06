@@ -1,6 +1,9 @@
 #!/bin/bash
 # EndeavourOS Setup Script
 
+# Cloning LIMO
+git clone https://github.com/ezraravin/limo.git
+
 # Ask for sudo once and keep it alive
 sudo -v
 while true; do
