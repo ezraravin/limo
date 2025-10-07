@@ -2,7 +2,7 @@
 # EndeavourOS Setup Script
 
 # Cloning LIMO
-git clone https://github.com/ezraravin/limo.git
+git clone https://github.com/ezraravin/limo.git ~/.limo
 
 # Ask for sudo once and keep it alive
 sudo -v
@@ -12,7 +12,7 @@ while true; do
   kill -0 "$$" || exit
 done 2>/dev/null &
 
-export MODULES_INSTALL="$HOME/limo/endeavour/modules"
+export MODULES_INSTALL="$HOME/.limo/endeavour/modules"
 
 source "$MODULES_INSTALL/0-dotfiles.sh"
 source "$MODULES_INSTALL/1-core.sh"
