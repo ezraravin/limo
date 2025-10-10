@@ -2,8 +2,15 @@
 ### Package Management
 ##############################################
 
+check_command brew
+
 # Install Homebrew if needed
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if command -v brew >/dev/null 2>&1; then
+    echo "✅ Homebrew is installed"
+else
+    echo "📦 Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # Configure Homebrew
 if [ -f "/opt/homebrew/bin/brew" ]; then
