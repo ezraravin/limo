@@ -2,7 +2,7 @@
 
 export MODULES_INSTALL="$HOME/.limo/mac/modules"
 
-git clone https://github.com/ezraravin/limo
+git clone https://github.com/ezraravin/limo ~/.limo
 
 # Extend sudo timeout for the entire script
 sudo -v
